@@ -149,3 +149,7 @@ lto = "thin"
 codegen-units = 1
 panic = "abort"
 debug = 1
+
+[workspace]
+members = ["encoder"]
+resolver = "2"
