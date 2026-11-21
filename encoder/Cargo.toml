@@ -1,0 +1,22 @@
+[package]
+name = "voxl-encoder"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.86"
+license = "MIT"
+description = "Voxl's low-latency x264 encoder core behind a Unix-socket frame protocol"
+publish = false
+
+[lib]
+name = "voxl_encoder"
+path = "src/lib.rs"
+
+[[bin]]
+name = "voxl-frame-encoder"
+path = "src/bin/voxl-frame-encoder.rs"
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.72"
+pkg-config = "0.3"
